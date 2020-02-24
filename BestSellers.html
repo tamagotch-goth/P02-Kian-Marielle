@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title> Best Sellers </title>
+    <meta charset="utf-8">
+    <link href="css/main-marielle.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+
+ <!-- font linking-->
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    
+<!-- viewport-->
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+</head>
+    
+<body>
+<!--    Top Bar Wayfinder-->
+    <section id="topbar" class="TopBar">
+        <div class="Content-Wrapper TwelveColGrid">
+            <div class="BestSellers-TopBar-Wayfinder">
+                <p> Shop  &#47;  <a href="BestSellers.html">Best Sellers</a></p>
+            </div>
+            <div class="BestSellers-TopBar-SortBy">
+                <label for="SortBy">Sort By:</label>
+                <select name="SortBy" id="Sortby">
+                    <option value="featured">Featured</option>
+                    <option value="best-selling">Best Selling</option>
+                    <option value="price-ascending">Price, low to high</option>
+                    <option value="price-descending">Price, high to low</option>
+                </select>
+            </div>
+        </div>
+    </section>
+<!--End of Top Bar Wayfinder-->
+    
+<!--Items Sections-->
+    <section id="items" class="Items">
+        <div class="Content-Wrapper TwelveColGrid">
+            <a class = "BestSellers-Items">
+                <div class ="BestSellers-Items-New">
+                    <b>NEW!</b>
+                </div>
+                <div class = "BestSellers-Item-Image">
+                    <img src="img/MarsAttacks-Poster.jpg" alt="Poster of 1996 Mars Attacks Movie. There is a giant alien that has an exposed brain head in the center of the poster that is holding the planet earth in her hands">
+                </div>
+                <div class = "BestSellers-Items-Copy">
+                    <h4>Mars Attacks Poster</h4>
+                    <h4>$15.00</h4>
+                </div>
+            </a>
+            
+            <a class = "BestSellers-Items">
+                <div class ="BestSellers-Items-New">
+                    <b>NEW!</b>
+                </div>
+                <div class = "BestSellers-Item-Image-OffWhite">
+                    <img src="img/Nasa-Notebook.jpg" alt="Spiral Notebook with a retro NASA logo on the cover">
+                </div>
+                <div class = "BestSellers-Items-Copy">
+                    <h4>Nasa Notebook</h4>
+                    <h4 >$25.00 CAD</h4>
+                </div>
+            </a>
+            
+            <a class = "BestSellers-Items">
+                <div class = "BestSellers-Item-Image">
+                    <img src="img/Zap-Zap-Laser-Gun.jpg" alt="Retro Toy Laser gun that is multicoloured. It has a red handle and lighting bolts at the tip of the laser gun">
+                </div>
+                <div class = "BestSellers-Items-Copy">
+                    <h4>Zap Zap Laser Gun</h4>
+                    <h4 class="SaleItemPrice"><mark class="SaleItem">$30.50 CAD</mark> $19.99 CAD</h4>
+                </div>
+            </a>
+            
+            <a class = "BestSellers-Items">
+                <div class = "BestSellers-Item-Image">
+                    <img src="img/AlienInvade.jpg" alt="Model retro alien spaceship. It is a saucer shape that is red with three feet">
+                </div>
+                <div class = "BestSellers-Items-Copy">
+                    <h4>Zap Zap Laser Gun</h4>
+                    <h4 class="SaleItemPrice"><mark class="SaleItem">$50.00 CAD</mark> $48.70 CAD</h4>
+                </div>
+            </a>
+            
+            <a class = "BestSellers-Items">
+                <div class = "BestSellers-Item-Image">
+                    <img src="img/Hal9000.jpg" alt="A Hal9000 Piggy Bank. It has a red circular eye at the center of it and a label at the top that says Hal900">
+                </div>
+                <div class = "BestSellers-Items-Copy">
+                    <h4>Hal9000's Bank</h4>
+                    <h4>$25.00 CAD</h4>
+                </div>
+            </a>
+            
+             <a class = "BestSellers-Items">
+                <div class = "BestSellers-Item-Image">
+                    <img src="img/JetsonLunch.jpg" alt="A lunch box and thermos with the characters of the Jetsons on them">
+                </div>
+                <div class = "BestSellers-Items-Copy">
+                    <h4>Jetson's Lunch</h4>
+                    <h4>$30.50 CAD</h4>
+                </div>
+            </a>
+            
+             <a class = "BestSellers-Items">
+                <div class = "BestSellers-Item-Image">
+                    <img src="img/AlarmClock.jpg" alt="A Retro spaceship shaped alarmclock.">
+                </div>
+                <div class = "BestSellers-Items-Copy">
+                    <h4>Lift Off Time</h4>
+                    <h4>$16.30 CAD</h4>
+                </div>
+            </a>
+            
+             <a class = "BestSellers-Items">
+                <div class = "BestSellers-Item-Image">
+                    <img src="img/Sunglasses.jpg" alt="One lens sunglasses that are very similar to the ones from the character of Cyclops from X-Men. The lenses are red and the frame is black">
+                </div>
+                <div class = "BestSellers-Items-Copy">
+                    <h4>X-Men Sunnies</h4>
+                    <h4>$19.99 CAD</h4>
+                </div>
+            </a>
+            
+            <div class="BestSellers-Items-LoadMore">
+                <a class="Button">Load More</a>
+            </div>
+            
+        </div>
+    </section>
+<!--End of Items Sections-->
+    
+<!--
+<nav class="Navbar">
+  <ul>
+    <li><a href="index.html">SPACE FUTURA</a></li>
+    <li><a href="shop.html">SHOP</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="login.html">LOGIN</a></li>
+    <li><a href="cart.html">CART</a></li>
+  </ul>
+</nav>
+-->
+</body>

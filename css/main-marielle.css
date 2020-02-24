@@ -1,0 +1,600 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background:#F3F3EB;
+}
+
+h1{
+    font-family:'Righteous', cursive;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #1F1D2B;
+    margin-bottom: .5em;
+    margin-top: .25em;
+}
+
+h2{
+    font-family:'Righteous', cursive;
+    font-size:2em;
+    text-transform: uppercase;
+    color: #1F1D2B;
+     margin-bottom: .25em;
+    margin-top: .25em;
+}
+
+h3{
+    font-family: 'PT Mono', monospace;
+    font-size: 1.5em;
+    color: #1F1D2B;
+}
+
+h4{
+    font-family: 'PT Mono', monospace;
+    font-size: 1em;
+    color: #1F1D2B;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+p, label{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.75em;
+}
+
+a{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.75em;
+    text-decoration:none;
+    color: #1F1D2B;
+}
+
+.Button{
+    font-family: 'Righteous', cursive;
+    text-transform:uppercase;
+    font-size:1em;
+    padding:1.5em;
+    color:rgb(242,243,234);
+    background-color:rgb(115,149,181);
+    text-align: center;
+    
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.Button:hover, .ExampleButton-Item:focus{
+    background-color: rgb(214,100,67);
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+@media (min-width:81.250em ){
+    .Content-Wrapper{
+        width:100%;
+        max-width:81.250em;
+        margin:0 auto;
+    }
+}
+
+
+.TwelveColGrid{
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(12,1fr);
+    grid-column: span 12;
+    grid-auto-rows: min-content;
+}
+
+/*Home Page*/
+
+/*    Header Section */
+.Header{
+    height: 48.125em;
+    width:100%;
+    background-color: #1F1D2B;
+    background-position: center;
+    background-image:url("../img/HeaderImage.jpg");
+    background-size: 100% cover;
+}
+
+.Home-H3-Description{
+    color:#F3F3EB;
+    grid-column: span 12;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 6em;
+}
+
+.Home-H1-Description{
+    color:#F3F3EB;
+    font-size: 5em;
+    grid-column: span 12;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.Home-Description-Sale-Item{
+    height: 15.250em;
+    background-color: white;
+    grid-column: span 2;
+    position: relative;
+    -webkit-transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+}
+
+.Home-Description-Sale-Item:hover, .Home-Description-Sale-Item:focus{
+    transform: scale(1.05);
+    -webkit-transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+}
+
+.Home-Button{
+    margin-top: 3em;
+    grid-column: 6 / span 2;
+}
+
+.HDSI-1{
+    grid-column: 2 / span 2;
+    background-image: url("../img/Zap-Zap-Laser-Gun.jpg");
+    background-size: 100%, contain;
+    background-repeat: no-repeat;
+}
+
+.HDSI-2{
+    background-image: url("../img/AlienInvade.jpg");
+    background-size: 100%, contain;
+    background-repeat: no-repeat;
+}
+
+.HDSI-3{
+    background-image: url("../img/JetsonLunch.jpg");
+    background-size: 100%, contain;
+    background-repeat: no-repeat;
+}
+
+.HDSI-4{
+    background-image: url("../img/Hal9000.jpg");
+    background-size: 100%, contain;
+    background-repeat: no-repeat;
+}
+
+.HDSI-5{
+    background-image: url("../img/AlarmClock.jpg");
+    background-size: 100%, contain;
+    background-repeat: no-repeat;
+}
+
+.HDSI-Item{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color:#F3F3EB;
+}
+
+.HDSI-Item-Title{
+    text-align: center;
+}
+
+/*    About Us Section*/
+.AboutUs{
+    margin-top: 6.250em;
+}
+
+.Home-AboutUs-Img{
+    grid-column: span 6;
+    max-height: 30em;
+    overflow: hidden;
+}
+
+.Home-AboutUs-Img img{
+    width:100%;
+    height: 100%;
+}
+
+.Home-AboutUs-Copy{
+    grid-column: span 6;
+    padding: .75em;
+    position: relative;
+}
+
+.Home-AboutUs-H1{
+    line-height: 1em;
+}
+
+.Home-AboutUs-P{
+    margin-bottom: 1em;
+}
+
+.Home-AboutUs-Button{
+    text-align: center;
+    padding: 1.5em 3em 1.5em 3em;
+    position: absolute;
+    left: 30%;
+}
+
+/*    Categories Section*/
+.Categories{
+    margin-top: 6.250em;
+    margin-bottom: 6.250em;
+}
+.Home-Categories-Item{
+    grid-column: span 4;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.05em;
+    border-color: #D9D9D2;
+    
+    padding-bottom: 1em;
+    
+    -webkit-transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+}
+.Home-Categories-Item:hover, .Home-Categories-Item:focus{
+    transform: scale(1.05);
+    -webkit-transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+}
+
+.Home-Categories-Item-Image{
+    max-height: 27.750em;
+    overflow: hidden;
+    z-index: 0;
+    border-style: solid;
+    border-width: 0.05em;
+    border-color: #D9D9D2;
+}
+
+.Home-Categories-Item-Image img{
+    width:100%;
+    height: 100%;
+}
+
+.Home-Categories-Copy{
+    padding: .5em;
+}
+
+/*    Retrofuturism Section */
+
+.Retrofuturism{
+    margin-top: 6.250em;
+    margin-bottom: 6.250em;
+    background-image:url("../img/Space_BG.jpg");
+    height: 23.375em;
+    background-size:cover;
+}
+
+.Home-Retrofuturism-h1{
+    color:#F3F3EB;
+    grid-column: span 12;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.Home-Retrofuturism-h4{
+    color:#F3F3EB;
+    grid-column: span 12;
+    text-align: center;
+    line-height: 1.75em;
+}
+
+.Home-Retrofuturism-Button{
+    grid-column: 5 / span 4;
+    text-align: center;
+    margin-top: 1em;
+}
+
+/*Home Media*/
+@media (max-width: 53.125em){
+    .Home-Categories-Item{
+        grid-column: span 12;
+    }
+}
+
+@media (max-width: 73em){
+    .Home-AboutUs-Img{
+        grid-column: span 12;
+    }
+    
+    .Home-AboutUs-Button{
+/*        left: center;*/
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .Home-AboutUs-Copy{
+        grid-column: span 12;
+        margin-bottom: 3em;
+    }
+    
+}
+
+@media (max-width: 65.313em){
+    .HDSI-Hide4{
+        display: none;
+    }
+    .Home-Description-Sale-Item{
+        grid-column: span 3;
+    }
+    .Home-AboutUs-Img{
+        max-height: 30em;
+    }
+    
+    .Retrofuturism{
+        height: 28em;
+    }
+    
+    .Home-Button{
+    margin-top: 3em;
+    grid-column: 5 / span 4;
+}
+}
+
+@media (max-width: 42.125em){
+    .HDSI-Hide4{
+        display: none;
+    }
+    .HDSI-Hide3{
+        display: none;
+    }
+    .Home-Description-Sale-Item{
+        grid-column: span 4;
+    }
+    
+    .Home-H1-Description{
+        font-size:3em;
+    }
+    
+    .Home-H3-Description{
+        font-size:1.25em;
+    }
+    
+    .Header{
+        height:45em;
+    }
+    
+    .Retrofuturism{
+        height: 35em;
+    }
+}
+
+@media (max-width: 32.625em){
+    .HDSI-Hide4{
+        display: none;
+    }
+    .HDSI-Hide3{
+        display: none;
+    }
+    
+    .HDSI-Hide2{
+        display: none;
+    }
+    
+    .Home-Description-Sale-Item{
+        grid-column: span 6;
+    }
+    
+    h1{
+        font-size: 2.5em;
+    }
+    
+    
+    .AboutUs{
+        margin-top: 4em;
+    }
+}
+
+@media (max-width: 31.205em){
+    .HDSI-Hide4{
+        display: none;
+    }
+    .HDSI-Hide3{
+        display: none;
+    }
+    .HDSI-Hide2{
+        display: none;
+    }
+    .HDSI-Hide1{
+        display: none;
+    }
+    .Header{
+        height:50em;
+         background-image:url("../img/HeaderImage_Mobile.jpg");
+        background-size: cover;
+    }
+    .Retrofuturism{
+        height: 38em;
+    }
+    
+    .Home-Retrofuturism-Button{
+        grid-column: 4 / span 6;
+    }
+    
+    .Home-Description-Sale-Item{
+        grid-column: 3 / span 8;
+        height:17em;
+    }
+    
+    .Home-Button{
+        grid-column: 3 / span 8;
+    }
+    .Content-Wrapper{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+}
+
+@media (min-width: 31.250em){
+    .Content-Wrapper{
+        padding-left: 2.500em;
+        padding-right:2.500em;
+    }
+}
+
+@media (min-width: 93.750em){
+    .Header{
+        background-image:url("../img/HeaderImage_Large.jpg");
+        background-size: cover;
+    }
+}
+
+/*Best Sellers Page*/
+
+/*    Top Bar Wayfinder */
+.TopBar .Content-Wrapper{
+    border-bottom: 1px solid black;
+}
+.BestSellers-TopBar-Wayfinder{
+    grid-column: span 6;
+}
+
+.BestSellers-TopBar-SortBy{
+    grid-column: 10 / span 3;
+}
+
+.BestSellers-TopBar-SortBy label{
+    padding-right: .5em;
+}
+
+.BestSellers-TopBar-SortBy select{
+    margin: 1em 0 1em 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.75em;
+    background-color: #F3F3EB;
+}
+
+/*    Items */
+
+.Items{
+    margin-top:2.250em;
+}
+
+
+.BestSellers-Items{
+    grid-column: span 3;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.05em;
+    border-color: #D9D9D2;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+    -webkit-transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+}
+.BestSellers-Items:hover, .BestSellers-Items:focus{
+    transform: scale(1.05);
+    -webkit-transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+}
+
+.BestSellers-Item-Image{
+    text-align: center;
+    max-height: 20em;
+    overflow: hidden;
+    z-index: 0;
+    border-style: solid;
+    border-width: 0.05em;
+    border-color: #D9D9D2;
+    background-color: white;
+    position: relative;
+}
+
+.BestSellers-Item-Image-OffWhite{
+    text-align: center;
+    max-height: 20em;
+    overflow: hidden;
+    z-index: 0;
+    border-style: solid;
+    border-width: 0.05em;
+    border-color: #D9D9D2;
+    background-color: #F4F4F4;
+    position: relative;
+}
+
+.BestSellers-Item-Image-OffWhite img{
+    width:100%;
+    height:120%;
+}
+
+.BestSellers-Items-New{
+    background-color: red;
+}
+
+.BestSellers-Item-Image img{
+    width:100%;
+    height:120%;
+}
+
+.BestSellers-Items-Copy{
+    padding: .5em;
+}
+
+.SaleItem{
+    text-decoration: line-through;
+    background-color: #F3F3EB;
+}
+
+.SaleItemPrice{
+    color: red;
+}
+
+.BestSellers-Items-LoadMore{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    grid-column: span 12;
+    text-align: center;
+}
+
+/*    Best Sellers Media*/
+@media (max-width: 81.250em){
+    .TopBar .Content-Wrapper{
+        margin-left: 1em;
+    }
+    
+    .Content-Wrapper{
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-right: 1em;
+    }
+}
+
+@media (max-width:62.188em){
+   .BestSellers-TopBar-SortBy{
+        grid-column: 9 / span 4;
+    }    
+}
+
+@media (max-width: 47.500em){
+    .BestSellers-TopBar-Wayfinder{
+        grid-column: span 4;
+    }
+    .BestSellers-TopBar-SortBy{
+        grid-column: 8 / span 5;
+    }
+}
+
+@media(max-width: 38.625em){
+    .BestSellers-TopBar-Wayfinder{
+        grid-column: span 12;
+        text-align: center;
+    }
+    .BestSellers-TopBar-SortBy{
+        grid-column: span 12;
+        text-align:center;
+    }
+    
+    .BestSellers-TopBar-SortBy select{
+        margin: 0 0 1em 0;
+    }
+}
+
+
