@@ -698,9 +698,109 @@ a{
 @media (max-width: 31.205em){
     .BestSellers-Items{
         grid-column: span 12;
-    }
-    
+    }  
 }
+
+/*Lising Page*/
+/*    Item Listing*/
+/*
+.ListingDiffImg{
+    grid-column: span 2;
+}
+
+.Listing-DiffImg-Img{
+    background: white;
+    height: 3em;
+}
+*/
+.Listing{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.Listing-Img{
+    grid-column: span 6;
+    height: 36.188em;
+    overflow: hidden;
+    background: white;
+}
+
+.Listing-Img img{
+    width:100%;
+    text-align: center;
+}
+
+.Listing-Copy{
+    grid-column: span 6;
+}
+
+.Listing-Copy h1{
+    text-align: center;
+    margin-bottom: 0em;
+}
+
+.Listing-Copy-Stars{
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom:.25em;
+}
+
+.Listing-Copy h4{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.Listing-Copy-Quantity h4{
+    margin-top: 1em;
+}
+
+.Listing-Copy h3{
+    font-size: 1.25em;
+    margin-top: 3em;
+    margin-bottom: .15;
+}
+.Listing-Copy p{
+    margin-top: .15;
+}
+.Listing-Copy-Quantity{
+    margin-top:1.5em;
+    border-bottom: 1px solid #1F1D2B;
+    border-top: 1px solid #1F1D2B;
+    margin-bottom: 3em;
+}
+
+.Listing-Copy-Button{
+    margin-top: 2em;
+    left: 50%;
+}
+
+@media (max-width: 63.375em){
+    .Listing-Img{
+        grid-column: 4/span 6;
+        height: 25em;
+        background-size: cover;
+    }
+    .Listing-Copy{
+        grid-column: span 12;
+    }
+}
+
+@media (max-width: 46.250em){
+    .Listing-Img{
+        grid-column: 3 / span 8;
+    }
+}
+
+@media (max-width: 31.205em){
+    .Listing-Img{
+        grid-column: span 12;
+    }
+    .Listing-Copy h1{
+        margin-top: 1em;
+    }
+}
+
 
 
 /*Input Field Styling*/
