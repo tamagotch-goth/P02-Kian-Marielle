@@ -346,7 +346,6 @@ a{
 }
 
 /*    Retrofuturism Section */
-
 .Retrofuturism{
     margin-top: 6.250em;
     margin-bottom:0;
@@ -374,6 +373,7 @@ a{
     text-align: center;
     margin-top: 1em;
 }
+
 
 /*Home Media*/
 @media (max-width: 53.125em){
@@ -556,7 +556,7 @@ a{
     background-color: #F3F3EB;
 }
 
-/*    Items */
+    /*Items */
 
 .Items{
     margin-top:2.250em;
@@ -611,8 +611,9 @@ a{
     height:120%;
 }
 
-.BestSellers-Items-New{
+.BestSellers-Items-Special{
     background-color: red;
+    color: white;
 }
 
 .BestSellers-Item-Image img{
@@ -801,7 +802,73 @@ a{
     }
 }
 
+/*What is Retrofuturism? Page*/
+.Retrofuturism-Header{
+    height: 31.250em;
+    width:100%;
+    background-color: #1F1D2B;
+    background-position: center;
+    background-image:url("../img/SpaceBackground_RFPage.jpg");
+    background-size: 100% cover;
+}
 
+.Retrofuturism-H1 {
+    color:#F3F3EB;
+    font-size: 5em;
+    grid-column: span 12;
+    text-align: center;
+    padding-top: 2.25em;
+    margin-top: 0;
+    margin-bottom: .15em;
+}
+
+.Retrofuturism-H3{
+    color:#F3F3EB;
+    text-align: center;
+    margin-top: .15em;
+}
+.Description{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.Retrofuturism-Image{
+    grid-column: span 6;
+    overflow:hidden;
+    height: 30em;
+}
+
+.Retrofuturism-Copy{
+    grid-column: span 6;
+}
+
+.Retrofuturism-Copy h1{
+    margin-top: 2em;
+}
+
+@media(max-width: 60.000em){
+    .Retrofuturism-H1{
+        font-size: 4em;
+    } 
+    .Retrofuturism-Header{
+        height: 28em;
+    }
+}
+
+@media(max-width: 46.875em){
+    .Retrofuturism-Image{
+        grid-column: span 12;
+    }
+    .Retrofuturism-Copy{
+        grid-column: span 12;
+    }
+    .Retrofuturism-H1{
+        font-size: 3em;
+    } 
+    .Retrofuturism-Copy h1{
+        margin-top: 1em;
+    }
+}
 
 /*Input Field Styling*/
 .column {
