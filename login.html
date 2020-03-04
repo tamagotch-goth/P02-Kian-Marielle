@@ -21,56 +21,113 @@ Home
 <body>
     
 <body>	 
-<div class="navbar">
-	
-
+<nav class="navbar">
+    
   <div class="dropdown">
-    <button class="dropbtn">Shop <i class="fa fa-caret-down"></i></button>
+    <button class="dropbtn">Shop &#8964;<i class="fa fa-caret-down"></i></button>
     <div class="dropdown-content">
       <a href="BestSellers.html">Clothing</a>
       <a href="BestSellers.html">Posters</a>
       <a href="BestSellers.html">Antiques</a>
       <a href="BestSellers.html">Lifeware</a>
       <a href="BestSellers.html">Best Sellers</a>
-
     </div>
   </div>
  
+ 
   <div class="dropdown">
-    <button class="dropbtn">About <i class="fa fa-caret-down"></i></button>
+    <button class="dropbtn">About &#8964;<i class="fa fa-caret-down"></i></button>
     <div class="dropdown-content">
-      <a href="#contactus.html">Contact Us</a>
+      <a href="contactus.html">Contact Us</a>
       <a href="about.html">About Us</a>
-
-
       </div>
   </div>
 
- <div class= "home">
-  <a href="index.html">Space Futura</a>
+ <div class= "navhome">
+  <a class="navhome" href="index.html">Space Futura</a>
  </div>
-   
-   <a href="login.html">Login</a>
-  
- 
- 
-    <a href="cart.html">Cart</a>
-    
-    </div>
-  </div>
- </div>
+
+
+    <a class="Nav-NoDropDown" href="login.html">Login</a>
+    <a class="Nav-NoDropDown" href="cart.html">Cart</a>
+</nav>
  
 <!--    start of header section-->
 <div class="row">
   <div class="column">
   	<h2>sign in to get back to future</h2>
-  	 <label class="InputLabel" for="Example-Input">Example Input</label>
-                    <input type="text" id="Example-Input" name="Example-Input" class="Example-TextInput">
 
 
+  <form action="">
+
+  <div class="field">
+    <input type="text" name="email" id="email" placeholder="You@example.com">
+    <label for="email">email</label>
   </div>
-  <div class="column"></div>
+  
+  <div class="field">
+    <input type="Password" name="Password" id="Password" placeholder="*********">
+    <label for="Password">Password</label>
+  </div>
+  </form>
+  <a class="Button log-Button" href="cart.html">Sign in</a>
+  </div>
+
+
+
+  <div class="column">
   <h2>Don't have an account?</h2>
-  	 <label class="InputLabel" for="Example-Input">Example Input</label>
-                    <input type="text" id="Example-Input" name="Example-Input" class="Example-TextInput">
+  <form action="">
+
+  <div class="field">
+    <input type="text" name="name" id="name" placeholder="Dave Smith">
+    <label for="name">name</label>
+  </div>
+
+  <div class="field">
+    <input type="text" name="emailSU" id="emailSU" placeholder="You@example.com">
+    <label for="emailSU">email</label>
+  </div>
+  
+  <div class="field">
+    <input type="PasswordSU" name="PasswordSU" id="PasswordSU" placeholder="*********">
+    <label for="PasswordSU">Password</label>
+  </div>
+
+  <div class="field">
+    <input type="ConPassword" name="ConPassword" id="ConPassword" placeholder="*********">
+    <label for="ConPassword">Confirm Password</label>
+  </div>
+  </form>
+  <a class="Button log-Button" href="Signup.html">Sign Up</a>
 </div>
+</div>
+
+
+
+    <footer class="footer">
+
+ <div class = "Footer-Wrapper FooterColGrid">
+            
+    
+            <div class = "footer1">
+            <a href="BestSellers.html">Clothing</a>
+               
+             <a href="BestSellers.html">Posters</a>
+             </div>
+
+            <div class = "footer2">
+                 <a href="contactus.html">Contact Us</a>
+                 <a href="about.html">About Us</a>
+            </div>
+            <div class = "footer3">
+              <p>Behind the Scenes<br/> <a href="Citations.html">Citation</a><br /> <a href="StyleGuide.html">style guide</a><br /><a href="https://github.com/tamagotch-goth/P02-Kian-Marielle">Git</a><br /></p>
+            </div>
+ </div>
+
+
+    </footer>
+
+</body>
+
+</html>

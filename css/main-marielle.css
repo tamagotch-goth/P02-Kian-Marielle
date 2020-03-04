@@ -92,22 +92,30 @@ a{
 
 /* The navigation menu */
 .navbar {
+    position: relative;
     overflow: hidden;
     font-family: 'Righteous', cursive;
     text-transform: uppercase;
     background-color: rgb(242,243,234);
     float: center;
     align-items: baseline;
+     
 }
 
 .navhome {
     font-family: 'Righteous', cursive;
     font-size: 1em;
-    padding:.6em;
-    float: left;
+   
+   
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 }
 
 .navbar a {
@@ -122,6 +130,8 @@ a{
 .Nav-NoDropDown{
     font-family: 'PT Mono', monospace;
     font-size: 1em;
+    float: right;
+     padding:.6em;
 }
 
 .dropdown {
@@ -174,6 +184,19 @@ a{
   display: block;
 }
 
+@media screen and (max-width: 600px) {
+  .navbar a, .Nav-NoDropDown {
+    float: none;
+    display: block;
+  }
+
+  .navhome a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
 /*End of Main Page Navigation*/
 
 /*Home Page*/
@@ -870,39 +893,141 @@ a{
     }
 }
 
-/*Input Field Styling*/
+/*Login page*/
+
+
+/* Create two equal columns that floats next to each other */
 .column {
   float: left;
+  width: 50%;
+  padding: 100px;
+ background-color: rgb(242,243,234);
 }
 
-.left {
-  width: 25%;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.right {
-  width: 75%;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
-.InputLabel{
-    font-family: 'PT Mono', monospace;
-    font-size: 1em;
-    padding: .5em 1em 1em 1.5em;  
+
+form {
+  margin: 2em 0;
+  border: 1;
+}
+/**
+* Make the field a flex-container, reverse the order so label is on top.
+*/
+ 
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+}
+/**
+* Add a transition to the label and input.
+
+*/
+label, input {
+  transition: all 0.2s;
+  touch-action: manipulation;
 }
 
-input[type=text]{
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1em;
-    border: 2px solid rgb(29,28,42);
-    padding: .75em;
-    width:30%
+input {
+  font-size: 1.5em;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: text;
 }
 
-input[type=text]:focus{
-    border:2px solid rgb(29,28,42);
-    outline:none;
+input:focus {
+  outline: 0;
+  border-bottom: 1px solid #666;
 }
-/*End of Input-Field Styling*/
 
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+/**
+* Translate down and scale the label up to cover the placeholder,
+* when following an input (with placeholder-shown support).
+* Also make sure the label is only on one row, at max 2/3rds of the
+* field—to make sure it scales properly and doesn't wrap.
+*/
+input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.5);
+}
+/**
+* By default, the placeholder should be transparent. Also, it should 
+* inherit the transition.
+*/
+::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+/**
+* Show the placeholder when the input is focused.
+*/
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+/**
+* When the element is focused, remove the label transform.
+* Also, do this when the placeholder is _not_ shown, i.e. when 
+* there's something in the input at all.
+*/
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+  .log-Button{
+    margin-top: 6em;
+    grid-column: 24 / span 32;
+}
+
+
+/*End of login page*/
+
+/*contact page*/
+
+
+
+/*end of contact page*/
+/*footer*/
+@media (min-width:81.250em ){
+    .Footer-Wrapper{
+        width:150%;
+        max-width:81.250em;
+        margin:0 auto;
+    }
+
+.FooterColGrid{
+    display: grid;
+    grid-column-gap: 500px;
+    grid-template-columns: repeat(32,10fr);
+    grid-column: span 3;
+    grid-auto-rows: min-content;
+}
 
 .footer {
  font-family: 'Righteous', cursive;
@@ -922,6 +1047,7 @@ input[type=text]:focus{
   text-decoration: none;
     text-transform: uppercase;
 }
+
 
 .footer p{
     margin-top:0;
@@ -944,23 +1070,3 @@ input[type=text]:focus{
     text-transform: uppercase;
 }
 
-#footer > p:first-child {
-     font-family: 'Righteous', cursive;
-  
-    float: left;
-    text-align: left;
-    width: 33.3%; }
-
-#footer > p:nth-child(2) {
-     font-family: 'Righteous', cursive;
-  
-    float: left;
-    text-align: center;
-    width: 33.4%; }
-
-#footer > p:last-child {
-     font-family: 'Righteous', cursive;
-  
-    float: right;
-    text-align: right;
-    width: 33.3%; }
