@@ -344,6 +344,8 @@ a{
     grid-column: span 6;
     padding: .75em;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .Home-AboutUs-H1{
@@ -355,12 +357,10 @@ a{
 }
 
 .Home-AboutUs-Button{
-    text-align: center;
+    margin-top: 1em;
     padding: 1.5em 3em 1.5em 3em;
-    position: absolute;
-    left: 30%;
     box-shadow: 4px 4px 10px #CECEC9;
-    
+    align-self: center;
 }
 
 /*    Categories Section*/
@@ -804,6 +804,8 @@ a{
 
 .Listing-Copy{
     grid-column: span 6;
+    display: flex;
+    flex-direction: column;
 }
 
 .Listing-Copy h1{
@@ -830,11 +832,12 @@ a{
 
 .Listing-Copy h3{
     font-size: 1.25em;
-    margin-top: 3em;
-    margin-bottom: .15;
+    margin-top: .25em;
+    margin-bottom: 0.10em;
 }
+
 .Listing-Copy p{
-    margin-top: .15;
+    margin-top: 0;
 }
 .Listing-Copy-Quantity{
     margin-top:1.5em;
@@ -844,10 +847,54 @@ a{
 }
 
 .Listing-Copy-Button{
-    margin-top: 2em;
-    left: 50%;
+    margin-top: 0em;
 }
 
+    /*RelatedItems Section */
+
+.RelatedItems{
+    margin: 1em 0 3em 0;
+}
+
+.RelatedItems a{
+    margin: 1em 0 1em 0;
+}
+.RelatedItems h3{
+    grid-column: span 12;
+}
+
+.Listing-Item{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color:#1F1D2B;
+}
+
+.Listing-Item-Title{
+    text-align: center;
+    color: #F3F3EB;
+}
+
+.Listing-1{
+    grid-column: span 2;
+    background-image: url("../img/Zap-Zap-Laser-Gun.jpg");
+    background-size: 100%, contain;
+    background-repeat: no-repeat;
+}
+
+.Listing-RI-6{
+    background-image: url("../img/Nasa-Notebook.jpg");
+    background-size: 100%, contain;
+    background-repeat: no-repeat;
+}
+
+.Listing-RI-7{
+    background-image: url("../img/MarsAttacks-Poster.jpg");
+    background-size: 100%, contain;
+    background-repeat: no-repeat;
+}
+
+    /*Media for Listings*/
 @media (max-width: 63.375em){
     .Listing-Img{
         grid-column: 4/span 6;
