@@ -181,12 +181,12 @@ a{
 
 .Nav-MobileMenu a{
     display: block;
-    padding: 0 4em 0 4em;
+    padding: .5em 4em .5em 4em;
 }
 
 .Nav-MobileMenu a:focus, .Nav-MobileMenu a:hover{
     text-decoration:underline;
-    background-color: #D8D8CA;
+    background-color: #BA4327;
 }
 
 .Nav-MobileMenu-Titles{
@@ -232,118 +232,6 @@ a{
     }
 }
 
-/*
-
-.navbar {
-    position: relative;
-    overflow: hidden;
-    font-family: 'Righteous', cursive;
-    text-transform: uppercase;
-    background-color: rgb(242,243,234);
-    float: center;
-    align-items: baseline;
-     
-}
-
-.navhome {
-    font-family: 'Righteous', cursive;
-    font-size: 1em;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    float: none;
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-}
-
-.navbar a {
-    font-family: 'Righteous', cursive;
-    float: right;
-    text-align: center;
-    padding:.6em;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.Nav-NoDropDown{
-    font-family: 'PT Mono', monospace;
-    font-size: 1em;
-    float: right;
-     padding:.6em;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-    font-family: 'PT Mono', monospace;
-    text-transform: uppercase;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    text-transform: uppercase;
-    margin: 0;
-}
-*/
-
-/*
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(242,243,234);
-    text-decoration: underline;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-   background-color: rgb(242,243,234);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-    font-family: 'PT Mono', monospace;
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-*/
-/*
-
-@media screen and (max-width: 600px) {
-  .navbar a, .Nav-NoDropDown {
-    float: none;
-    display: block;
-  }
-
-  .navhome a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-}
-*/
-/*End of Main Page Navigation*/
 
 /*Home Page*/
 
@@ -560,7 +448,7 @@ a{
     }
     
     .Home-AboutUs-Button{
-/*        left: center;*/
+        left: center;
         align-items: center;
         justify-content: center;
     }
@@ -662,7 +550,7 @@ a{
     }
     .Header{
         height:50em;
-         background-image:url("../img/HeaderImage_Mobile.jpg");
+        background-image:url("../img/HeaderImage_Mobile.jpg");
         background-size: cover;
     }
     .Retrofuturism{
@@ -1174,60 +1062,68 @@ input:focus + label {
 
 
 /*end of contact page*/
-/*footer*/
-@media (min-width:81.250em ){
-    .Footer-Wrapper{
-        width:150%;
-        max-width:81.250em;
-        margin:0 auto;
+
+footer{
+    background-color: #1F1D2B;
+}
+
+.Footer-Header{
+    color:#F2F2E9;
+    margin: 2em 0 .5em 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.Footer-Link{
+    color:#F2F2E9;
+    display: block;
+}
+
+.Footer-Link:focus, .Footer-Link:hover{
+    text-decoration: underline;
+}
+
+.Footer-Shop{
+    grid-column: span 4;
+    margin-bottom: 2em;
+}
+
+.Footer-About{
+    grid-column: span 4;
+    margin-bottom: 2em;
+}
+
+.Footer-BTS{
+    grid-column: span 4;
+    margin-bottom: 2em;
+}
+
+.Footer-Copyright{
+    grid-column: span 12;
+    text-align: center;
+    color: #59598E;
+    border-top: 1px solid #59598E;
+}
+
+@media (max-width: 24.250em){
+    
+    .Footer-Shop{
+        grid-column: span 12;
+        margin-bottom: 1em;
+        text-align: center;
     }
 
-.FooterColGrid{
-    display: grid;
-    grid-column-gap: 500px;
-    grid-template-columns: repeat(32,10fr);
-    grid-column: span 3;
-    grid-auto-rows: min-content;
-}
+    .Footer-About{
+        grid-column: span 12;
+        margin-bottom: 1em;
+        text-align: center;
+    }
 
-.footer {
- font-family: 'Righteous', cursive;
-  
-  margin-top: 0;
-  margin-bottom: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(31, 29, 43);
-  color: white;
-  text-align: center;
-    
-  font-size: 16px;
-  
- 
-  text-decoration: none;
-    text-transform: uppercase;
-}
-
-
-.footer p{
-    margin-top:0;
-    margin-bottom:0;
-}
-.footer a {
- font-family: 'Righteous', cursive;
-  
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(31, 29, 43);
-  color: white;
-  text-align: center;
-    
-  font-size: 16px;
-  
- 
-  text-decoration: none;
-    text-transform: uppercase;
+    .Footer-BTS{
+        grid-column: span 12;
+        margin-bottom: 1em;
+        text-align: center;
+    }
 }
 
