@@ -775,17 +775,7 @@ a{
 }
 
 /*Lising Page*/
-/*    Item Listing*/
-/*
-.ListingDiffImg{
-    grid-column: span 2;
-}
 
-.Listing-DiffImg-Img{
-    background: white;
-    height: 3em;
-}
-*/
 .Listing{
     margin-top: 3em;
     margin-bottom: 3em;
@@ -876,7 +866,6 @@ a{
 }
 
 .Listing-1{
-    grid-column: span 2;
     background-image: url("../img/Zap-Zap-Laser-Gun.jpg");
     background-size: 100%, contain;
     background-repeat: no-repeat;
