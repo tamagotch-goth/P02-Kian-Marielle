@@ -981,12 +981,13 @@ a{
 /*Login page*/
 
 
-/* Create two equal columns that floats next to each other */
+
 .column {
   float: left;
   width: 50%;
   padding: 100px;
  background-color: rgb(242,243,234);
+ text-align: center;
 }
 
 /* Clear floats after the columns */
@@ -996,7 +997,7 @@ a{
   clear: both;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -1005,54 +1006,59 @@ a{
 
 
 form {
+    
   margin: 2em 0;
   border: 1;
+  width: 35%;
+  display: block; 
+    margin: auto;
 }
-/**
-* Make the field a flex-container, reverse the order so label is on top.
-*/
+
  
 .field {
+     
   display: flex;
   flex-flow: column-reverse;
   margin-bottom: 1em;
 }
-/**
-* Add a transition to the label and input.
 
-*/
+
 label, input {
+ 
+    font-size: 0.7em;
+    padding: 4px;
   transition: all 0.2s;
   touch-action: manipulation;
 }
 
 input {
-  font-size: 1.5em;
-  border: 0;
-  border-bottom: 1px solid #ccc;
-  font-family: inherit;
+  font-family: 'PT Mono', monospace;
+    
+  border: 4;
+  border-style: solid;
+  border-width: thick;
+  font-size: 1em;
+  
   -webkit-appearance: none;
-  border-radius: 0;
+  
   padding: 0;
   cursor: text;
 }
 
 input:focus {
+    
   outline: 0;
-  border-bottom: 1px solid #666;
+  
 }
 
 label {
+    
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  
 }
-/**
-* Translate down and scale the label up to cover the placeholder,
-* when following an input (with placeholder-shown support).
-* Also make sure the label is only on one row, at max 2/3rds of the
-* field—to make sure it scales properly and doesn't wrap.
-*/
+
 input:placeholder-shown + label {
+   
   cursor: text;
   max-width: 66.66%;
   white-space: nowrap;
@@ -1061,37 +1067,91 @@ input:placeholder-shown + label {
   transform-origin: left bottom;
   transform: translate(0, 2.125rem) scale(1.5);
 }
-/**
-* By default, the placeholder should be transparent. Also, it should 
-* inherit the transition.
-*/
+
 ::-webkit-input-placeholder {
+     
   opacity: 0;
   transition: inherit;
 }
-/**
-* Show the placeholder when the input is focused.
-*/
+
 input:focus::-webkit-input-placeholder {
-  opacity: 1;
+
+  opacity: 3;
 }
-/**
-* When the element is focused, remove the label transform.
-* Also, do this when the placeholder is _not_ shown, i.e. when 
-* there's something in the input at all.
-*/
+
 input:not(:placeholder-shown) + label,
 input:focus + label {
+   
   transform: translate(0, 0) scale(1);
   cursor: pointer;
 }
   .log-Button{
-    margin-top: 6em;
-    grid-column: 24 / span 32;
+    display: block; 
+    margin: auto;
+    width: 35%;
+
+
+}
+
+    .vl {
+   border-left: 3px solid black;
+  height: 450px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 180px;
+}
+
+@media screen and (max-width: 600px) {
+  .vl {
+    border-left: 0px solid black;
+  }
+}
+
+/*End of login page*/
+
+/*sign up page*/
+.Signup{
+  
+   
+    background-color: #1F1D2B;
+}
+
+.Signup-Img{
+   
+    max-height: 30em;
+    overflow: hidden;
+}
+
+.Signup-Img img{
+    width:25%;
+    height: 25%;
+
+}
+
+.Signup-Copy{
+    grid-column: span 6;
+    padding: 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-self: center;
+}
+
+.Signup-P{
+    margin-bottom: 1em;
+}
+
+.Signup-Button{
+    margin-top: 1em;
+    align-self: center;
 }
 
 
-/*End of login page*/
+/*end of sign up page*/
+
+
 
 /*contact page*/
 
