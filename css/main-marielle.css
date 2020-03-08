@@ -1183,13 +1183,182 @@ a{
     }
 }
 
+/*Checkout Page*/
+
+.Checkout-Payment{
+    grid-column: span 6;
+    margin: 4em 0 4em 0;
+}
+
+.Checkout-Info{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1F1D2B;
+    box-shadow: 4px 4px 10px rgba(51, 51, 51, 0.2);
+    
+    margin-bottom: 2em;
+}
+
+.Checkout-Info h2{
+    margin: 1em;
+}
+
+.Checkout-Info-Hidden{
+    margin-bottom: 2em;
+    display: none;
+
+    -webkit-transition: display 0.5s ease-out;
+    transition: display 0.5s ease-out;  
+}
+
+.Checkout-Info:hover .Checkout-Info-Hidden{
+    display: block;
+    
+    -webkit-transition: display 0.5s ease-out;
+    transition: display 0.5s ease-out;  
+}
+
+.Checkout-Form{
+    float: left;
+    margin: 0 0 0 2em ;
+    width: 30em;
+}
+
+
+.Checkout-Account{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0 2em 0 2em;
+}
+
+.Checkout-Account h3{
+    font-size: 1.2em;
+    margin: 1em 0 .5em 0;
+}
+
+.Checkout-h3{
+    font-size: 1.2em;
+    margin: 2em 2em 1em 2em;
+    padding-top: 3em;
+}
+
+.Checkout-Account p{
+    font-size: .75em;
+}
+
+.Checkout-Account a{
+    color: #D66443;
+    text-decoration: underline;
+}
+
+.Checkout-Label{
+    font-family: 'PT Mono', monospace;
+}
+
+
+.Checkout-Input::placeholder{
+    opacity: 100%;
+    text-align: left;
+}
+
+.Checkout-Form select{
+    width: 100%;
+    border: 1px solid #1F1D2B; 
+    background: none;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 8px 12px;
+    outline: 0;
+    text-align: left;
+    margin:0 0 1em 0;
+    font-family: 'PT Mono', monospace;
+}
+
+.Checkout-Input{
+    width: 100%;
+    border: 1px solid #1F1D2B; 
+    background: none;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 8px 12px;
+    outline: 0;
+    text-align: left;
+    margin:0 0 1em 0;
+}
+
+
+.Checkout-Item{
+    grid-column: span 6;
+    margin: 4em 0 4em 0;
+    height: 28em;
+    border: 1px solid #1F1D2B;
+    box-shadow: 4px 4px 10px rgba(51, 51, 51, 0.2);
+}
+
+.Checkout-Item h2{
+    margin: 1em;
+}
+
+.Checkout-Item h3{
+    font-size: 1.15em;
+}
+
+.Checkout-Underline{
+    padding-bottom: 1em;
+    border-bottom: 1px solid #1F1D2B;
+    
+}
+
+.Button-Container{
+    display: flex;
+    justify-content: center;
+}
+
+.Checkout-Button{
+    margin-bottom: 3em;
+    width: 10em;
+}
+
+
+@media (max-width:71.250em){
+    .Checkout-Form{
+        width: 20em;
+    }
+}
+
+@media (max-width:52.000em){
+    .Checkout-Payment{
+        grid-column: span 12;
+    }
+    
+    .Checkout-Item{
+        grid-column: span 12;
+        margin-top: 0;
+    }
+    
+    .Checkout-Form{
+        width: 30em;
+    }
+}
+
+@media (max-width: 37.000em){
+    .Checkout-Form{
+        width: 15em;
+    }
+}
+
+
 /*Login page*/
 .column {
-  float: left;
-  width: 50%;
-  padding: 100px;
- background-color: rgb(242,243,234);
- text-align: center;
+    float: left;
+    width: 50%;
+    padding: 100px;
+    background-color: rgb(242,243,234);
+    text-align: center;
 }
 
 /* Clear floats after the columns */
@@ -1205,7 +1374,6 @@ a{
     width: 100%;
   }
 }
-
 
 form {
     
@@ -1228,12 +1396,12 @@ label, input {
     font-size: 0.7em;
     padding: 4px;
     transition: all 0.2s;
-    touch-action: manipulation;
+/*    touch-action: manipulation;*/
 }
 
 input {
   font-family: 'PT Mono', monospace;
-  border: .25em;
+  border: .10em;
   border-style: solid;
 /*  border-width: thick;*/
   font-size: 1em;
@@ -1303,20 +1471,22 @@ input:focus + label {
 
 /*sign up page*/
 .Signup{
-  
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #1F1D2B;
+    padding: 2em 0 2em 0;
 }
 
 .Signup-Img{
-   
+   align-self: center;
     max-height: 30em;
     overflow: hidden;
 }
 
 .Signup-Img img{
-    width:25%;
-    height: 25%;
+    width:100%;
+    height: 100%;
 
 }
 
