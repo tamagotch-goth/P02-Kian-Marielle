@@ -242,7 +242,7 @@ a{
     background-color: #1F1D2B;
     background-position: center;
     background-image:url("../img/HeaderImage.jpg");
-    background-size: 100% cover;
+    background-size: cover;
 }
 
 .Home-H3-Description{
@@ -445,12 +445,6 @@ a{
 @media (max-width: 73em){
     .Home-AboutUs-Img{
         grid-column: span 12;
-    }
-    
-    .Home-AboutUs-Button{
-        left: center;
-        align-items: center;
-        justify-content: center;
     }
     
     .Home-AboutUs-Copy{
@@ -917,7 +911,7 @@ a{
     background-color: #1F1D2B;
     background-position: center;
     background-image:url("../img/SpaceBackground_RFPage.jpg");
-    background-size: 100% cover;
+    background-size: cover;
 }
 
 .Retrofuturism-H1 {
@@ -990,7 +984,7 @@ a{
     background-color: #1F1D2B;
     background-position: center;
     background-image:url("../img/AboutUs.jpg");
-    background-size: 100% cover;
+    background-size:cover;
 }
 
 .About-Image{
@@ -1378,7 +1372,6 @@ a{
 form {
     
   margin: 2em 0;
-  border: 1;
   width: 35%;
   display: block; 
     margin: auto;
@@ -1516,8 +1509,56 @@ input:focus + label {
 
 /*contact page*/
 
+.map{
+    margin: 3em 0 3em 0;
+}
 
+.contact-form{
+    grid-column: span 6;
+}
 
+.contact-form form{
+    float: left;
+    width: 30em;
+}
+
+.contact-map{
+    grid-column: span 6;  
+}
+
+iframe{
+    height: 20em;
+    width: 100%;
+}
+
+textarea{
+    font-family: 'PT Mono', monospace;
+  border: .10em;
+  border-style: solid;
+/*  border-width: thick;*/
+  font-size: 1em;
+  text-align: center;
+  -webkit-appearance: none;
+  
+  padding-top: 1em;
+  cursor: text;
+}
+
+@media (max-width:64.875em){
+    .contact-form{
+        grid-column: span 12;
+        display: flex;
+        justify-content: center;
+        }
+  .contact-map{
+    grid-column: span 12;
+      margin-top: 2em;
+      display: flex;
+        justify-content: center;
+      flex-direction: column;
+    }
+    
+}
 /*end of contact page*/
 
 footer{
